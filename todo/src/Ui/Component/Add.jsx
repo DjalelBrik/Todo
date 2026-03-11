@@ -69,31 +69,36 @@ export default function Add({setshow}){
           <div className="grid grid-cols-5 gap-3">
             <button 
               onClick={()=>setcategorie("Work")}
-             className="border rounded-xl p-3 flex flex-col items-center text-sm">
+            className={`border rounded-xl p-3 flex flex-col items-center
+             ${categorie === "Work" ? " border-green-500" : "bg-white"}`}>
               <Briefcase size={20}/>
               Work
             </button>
             <button
             onClick={()=>setcategorie("Personal")}
-            className="border rounded-xl p-3 flex flex-col items-center text-sm">
+            className={`border rounded-xl p-3 flex flex-col items-center
+             ${categorie === "Personal" ? " border-green-500" : "bg-white"}`}>
               <User size={20}/>
               Personal
             </button>
             <button 
               onClick={()=>setcategorie("Health")}
-              className="border rounded-xl p-3 flex flex-col items-center text-sm">
+            className={`border rounded-xl p-3 flex flex-col items-center
+             ${categorie === "Health" ? " border-green-500" : "bg-white"}`}>
               <Heart size={20}/>
               Health
             </button>
             <button
              onClick={()=>setcategorie("Shopping")}
-             className="border rounded-xl p-3 flex flex-col items-center text-sm">
+            className={`border rounded-xl p-3 flex flex-col items-center
+             ${categorie === "Shopping" ? " border-green-500" : "bg-white"}`}>
               <ShoppingCart size={20}/>
               Shopping
             </button>
             <button
               onClick={()=>setcategorie("Other")}
-              className="border rounded-xl p-3 flex flex-col items-center text-sm">
+            className={`border rounded-xl p-3 flex flex-col items-center
+             ${categorie === "Other" ? " border-green-500" : "bg-white"}`}>
               <MoreHorizontal size={20}/>
               Other
             </button>
