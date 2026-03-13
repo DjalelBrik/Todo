@@ -1,9 +1,9 @@
-import { Clock } from "lucide-react";
+import { Clock, Trash2 } from "lucide-react";
 import { useContext } from "react";
 import { TaskContext } from "../../Context/TaskContext";
 
 export default function Task({ id, title, description, time, categorie, check }) {
-  const { settask } = useContext(TaskContext);
+  const { task,settask } = useContext(TaskContext);
 
   function Handlecheck(e) {
     const checked = e.target.checked;
@@ -12,7 +12,9 @@ export default function Task({ id, title, description, time, categorie, check })
     );
     console.log(checked)
   }
-
+   function Delete(id){
+    settask((prev) => prev.filter((t) => t.key !== id));
+   }
   return (
     <div className="flex justify-center">
       <div className="bg-white p-5 rounded-xl shadow-md flex gap-4 w-[80%] justify-between">
@@ -36,6 +38,9 @@ export default function Task({ id, title, description, time, categorie, check })
               </span>
             </div>
           </div>
+        </div>
+        <div>
+          <button><Trash2 size={20} color="red" onClick={() => Delete(id)}/></button>
         </div>
       </div>
     </div>
