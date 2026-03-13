@@ -1,16 +1,26 @@
-# React + Vite
+# Todo Web App 
+ 
+I Build a todo app with modern ui with React+vite and I add external tools like Routing to move between the frames, and i use Lucide to add the icons and i also use the local Storage for store your data in the broweser .
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# what you can do with this app
 
-Currently, two official plugins are available:
+-add a task and you can also delete it.
+-Check the complited tasks.
+-Show the Daily Progress as a Bar.
+-Show number of completed and no completed task and percentage of completed and Bars to each type of tasks and his percent from all the tasks.
+-Store your task in the local storage for the reuse in another time.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Tech Stack 
+-React Js + Vite.
+-TailwindCSS.
+-React Router.
+-Lucide Icons.
 
-## React Compiler
+# Extra Information :
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+-Failed to deploy it in vercel.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Finally
+ 
+ i want your opinion about the project and my readme file for more devlopment in my self.
+ 
